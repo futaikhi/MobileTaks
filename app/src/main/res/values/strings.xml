@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MobileTaks</string>
+    <string name="deskripsi">
+        Can this contain a lot of text? Can it contain \n a newline? Yes, it can.
+        Adding a 2nd line like this should work.
+        It should not cause parsing errors.
+    </string>
+    <string name="checkbox">com.example.mobiletaks.checkbox</string>
+    <string name="nama">com.example.mobiletaks.nama</string>
+    <string name="passw">com.example.mobiletaks.passw</string>
+</resources>

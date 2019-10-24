@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tesArray">
+        <item>Anime</item>
+        <item>Document</item>
+        <item>Download</item>
+        <item>Game</item>
+        <item>Images</item>
+        <item>Music</item>
+    </array>
+    <integer-array name="gambar">
+        <item>@mipmap/anime</item>
+        <item>@mipmap/document</item>
+        <item>@mipmap/download</item>
+        <item>@mipmap/game</item>
+        <item>@mipmap/images</item>
+        <item>@mipmap/music</item>
+    </integer-array>
+    <array name="lala">
+        <item>@drawable/anime</item>
+        <item>@drawable/document</item>
+        <item>@drawable/download</item>
+        <item>@drawable/game</item>
+        <item>@drawable/images</item>
+        <item>@drawable/music</item>
+    </array>
+</resources>
