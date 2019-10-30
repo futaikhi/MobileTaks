@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     SharedPreferences.Editor mEditor;
 
     EditText username,pass;
-    Button submit;
+    Button submit,guest;
     CheckBox centang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         pass = (EditText)findViewById(R.id.editText2);
         submit = (Button)findViewById(R.id.button);
         centang = (CheckBox)findViewById(R.id.checkBox);
+        guest = (Button)findViewById(R.id.button4);
 
         mPrefanfences = PreferenceManager.getDefaultSharedPreferences(this);
 //        mPrefanfences = getPreferences("mydata",.MODE_PRIVATE);
@@ -36,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
         mEditor = mPrefanfences.edit();
 
         checkSharedPrefences();
+
+        guest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,guest.class);
+                MainActivity.this.startActivity(intent);
+                finish();
+            }
+        });
 
 
         submit.setOnClickListener(new View.OnClickListener() {
