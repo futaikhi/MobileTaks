@@ -38,15 +38,6 @@ public class MainActivity extends AppCompatActivity {
 
         checkSharedPrefences();
 
-        guest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,guest.class);
-                MainActivity.this.startActivity(intent);
-                finish();
-            }
-        });
-
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -134,4 +125,10 @@ public class MainActivity extends AppCompatActivity {
             centang.setChecked(false);
         }
      }
+
+    public void click(View view) {
+        Intent intent = new Intent(MainActivity.this,guest.class);
+        MainActivity.this.startActivity(intent);
+        finish();
+    }
 }

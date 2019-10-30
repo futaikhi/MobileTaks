@@ -25,7 +25,7 @@ public class customAdapterlist implements ListAdapter {
 
     @Override
     public int getCount() {
-        return 0;
+        return arrayList.size();
     }
 
     @Override
@@ -34,8 +34,9 @@ public class customAdapterlist implements ListAdapter {
     }
 
     @Override
-    public boolean isEnabled(int i) {
-        return false;
+    public boolean isEnabled(int position)
+    {
+        return true;
     }
 
     public void registerDataSetObserver(DataSetObserver observer)
@@ -53,19 +54,17 @@ public class customAdapterlist implements ListAdapter {
         return position;
     }
 
+    @Override
     public long getItemId(int position)
     {
         return position;
     }
 
-    public boolean hassStableIds()
-    {
-        return false;
-    }
 
+    @Override
     public View getView( int position, View convertView, ViewGroup parent)
     {
-        subjectData subjectData = arrayList.get(position);
+        subjectData subjectdata = arrayList.get(position);
         if (convertView==null)
         {
             LayoutInflater layoutInflater = LayoutInflater.from(context);
@@ -77,10 +76,12 @@ public class customAdapterlist implements ListAdapter {
                 }
             });
             TextView title = convertView.findViewById(R.id.title);
+            TextView subtitle = convertView.findViewById(R.id.subtitle);
             ImageView imageView = convertView.findViewById(R.id.icon);
-            title.setText(subjectData.SubjectName);
-            Picasso.with(context).load(subjectData.Image).into(imageView);
-        }
+            title.setText(subjectdata.SubjectName);
+            subtitle.setText(String.valueOf(subjectdata.nilai));
+            Picasso.with(context).load(subjectdata.gambar).into(imageView);
+    }
         return convertView;
     }
 
@@ -91,7 +92,7 @@ public class customAdapterlist implements ListAdapter {
 
     @Override
     public int getViewTypeCount() {
-        return 0;
+        return arrayList.size();
     }
 
     @Override

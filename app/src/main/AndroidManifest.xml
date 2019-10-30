@@ -21,7 +21,8 @@
         <activity android:name=".fuu_item">
         </activity>
         <activity android:name=".vii">
-
+        </activity>
+        <activity android:name=".guest">
         </activity>
     </application>
 

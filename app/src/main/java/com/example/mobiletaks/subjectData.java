@@ -1,15 +1,16 @@
 package com.example.mobiletaks;
 
+
 public class subjectData {
     String SubjectName;
-    String Link;
-    String Image;
+    double nilai;
+    String gambar;
 
-    public subjectData(String subjectName, String Link, String Image)
+    public subjectData(String subjectName,double nilai, String gambar)
     {
         this.SubjectName = subjectName;
-        this.Link = Link;
-        this.Image = Image;
+        this.nilai = nilai;
+        this.gambar = gambar;
 
     }
 }

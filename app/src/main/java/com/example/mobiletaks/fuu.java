@@ -5,33 +5,16 @@ import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.GridView;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.BundleCompat;
-
-import java.util.Arrays;
 
 public class fuu extends AppCompatActivity {
 
     GridView gridView;
 
-
     String [] osNameList;
 
     TypedArray osImages;
-
-//    public  static int[] osImages = {
-//            R.mipmap.anime,
-//            R.mipmap.document,
-//            R.mipmap.download,
-//            R.mipmap.game,
-//            R.mipmap.images,
-//            R.mipmap.music
-//    };
 
     Button btn;
 

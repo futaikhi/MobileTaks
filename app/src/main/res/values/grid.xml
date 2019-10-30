@@ -16,12 +16,4 @@
         <item>@mipmap/images</item>
         <item>@mipmap/music</item>
     </integer-array>
-    <array name="lala">
-        <item>@drawable/anime</item>
-        <item>@drawable/document</item>
-        <item>@drawable/download</item>
-        <item>@drawable/game</item>
-        <item>@drawable/images</item>
-        <item>@drawable/music</item>
-    </array>
 </resources>
