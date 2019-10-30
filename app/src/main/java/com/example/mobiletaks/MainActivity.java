@@ -68,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
                         mEditor.putString(getString(R.string.passw), "");
                         mEditor.commit();
                     }
-                    Toast.makeText(getApplicationContext(),"Tes Berhasil",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this,fuu.class);
+                    Toast.makeText(getApplicationContext(),"Login Berhasil",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, Fuu.class);
                     MainActivity.this.startActivity(intent);
                     finish();
                 }
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                         mEditor.commit();
                     }
                     Toast.makeText(getApplicationContext(),"Login Succes",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this,vii.class);
+                    Intent intent = new Intent(MainActivity.this, David.class);
                     MainActivity.this.startActivity(intent);
                     finish();
                 }
@@ -127,8 +127,14 @@ public class MainActivity extends AppCompatActivity {
      }
 
     public void click(View view) {
-        Intent intent = new Intent(MainActivity.this,guest.class);
+        Intent intent = new Intent(MainActivity.this, Guest.class);
         MainActivity.this.startActivity(intent);
         finish();
     }
+
+    @Override
+    public void onBackPressed(){
+        finishAffinity();
+    }
+
 }

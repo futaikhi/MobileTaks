@@ -2,7 +2,7 @@ package com.example.mobiletaks;
 
 import android.os.Bundle;
 
-public class guest extends fuu {
+public class Guest extends Fuu {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

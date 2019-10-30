@@ -16,13 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".fuu">
+        <activity android:name=".Fuu">
         </activity>
-        <activity android:name=".fuu_item">
+        <activity android:name=".FuuItem">
         </activity>
-        <activity android:name=".vii">
+        <activity android:name=".David">
         </activity>
-        <activity android:name=".guest">
+        <activity android:name=".Guest">
         </activity>
     </application>
 

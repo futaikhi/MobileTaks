@@ -1,5 +1,6 @@
 package com.example.mobiletaks;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
 
@@ -8,9 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
 import topsis.Topsis;
-import topsis.Data;
 
-public class fuu_item extends AppCompatActivity {
+public class FuuItem extends AppCompatActivity {
     protected void onCreate(Bundle saveInstanceState)
     {
         super.onCreate(saveInstanceState);
@@ -21,13 +21,7 @@ public class fuu_item extends AppCompatActivity {
         int[] c;
         int[] w;
         String[] gambar;
-//        String[] nama = { "Samsung", "Xiaomi", "Iphone", "Oppo" };
-//        int[] a = { 3, 5, 2, 3 };
-//        int[] b = { 5, 2, 4, 1 };
-//        int[] c = { 3, 2, 5, 2 };
-//        int[] w = { 2, 4, 5 };
-//        int[] gambar = { 4, 1, 23, 2, 3 };
-        ArrayList<subjectData> data = new ArrayList<subjectData>();
+        ArrayList<SubjetData> data = new ArrayList<SubjetData>();
         nama = getResources().getStringArray(R.array.hp);
         a = getResources().getIntArray(R.array.baterai);
         b = getResources().getIntArray(R.array.panelLayar);
@@ -37,10 +31,16 @@ public class fuu_item extends AppCompatActivity {
         Topsis topsis = new Topsis(a,b,c,nama,w,gambar);
         final ListView daftar = findViewById(R.id.list);
         for (int i = 0 ; i < nama.length ; i++){
-            data.add(new subjectData(topsis.cetak()[i].getNama(),topsis.cetak()[i].getNilai(),topsis.cetak()[i].getGambar()));
+            data.add(new SubjetData(topsis.cetak()[i].getNama(),topsis.cetak()[i].getNilai(),topsis.cetak()[i].getGambar()));
         }
-        customAdapterlist customadapterlist = new customAdapterlist(this,data);
+        CustomAdapterList customadapterlist = new CustomAdapterList(this,data);
         daftar.setAdapter(customadapterlist);
+    }
 
+    @Override
+    public void onBackPressed(){
+        Intent intent = new Intent(FuuItem.this,Fuu.class);
+        FuuItem.this.startActivity(intent);
+        finish();
     }
 }

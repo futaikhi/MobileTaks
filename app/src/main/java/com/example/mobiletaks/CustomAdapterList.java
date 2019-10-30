@@ -8,17 +8,18 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class customAdapterlist implements ListAdapter {
+public class CustomAdapterList implements ListAdapter {
 
-    ArrayList<subjectData> arrayList;
+    ArrayList<SubjetData> arrayList;
     Context context;
 
-    public customAdapterlist(Context context,ArrayList<subjectData> arrayList) {
+    public CustomAdapterList(Context context, ArrayList<SubjetData> arrayList) {
         this.arrayList = arrayList;
         this.context = context;
     }
@@ -64,7 +65,7 @@ public class customAdapterlist implements ListAdapter {
     @Override
     public View getView( int position, View convertView, ViewGroup parent)
     {
-        subjectData subjectdata = arrayList.get(position);
+        final SubjetData subjectdata = arrayList.get(position);
         if (convertView==null)
         {
             LayoutInflater layoutInflater = LayoutInflater.from(context);
@@ -72,7 +73,7 @@ public class customAdapterlist implements ListAdapter {
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
+                    Toast.makeText(context,"Kamu menekan : "+subjectdata.SubjectName, Toast.LENGTH_SHORT).show();
                 }
             });
             TextView title = convertView.findViewById(R.id.title);
