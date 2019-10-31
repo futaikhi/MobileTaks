@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -9,10 +10,10 @@
     <GridView
         android:id="@+id/customgrid2"
         android:layout_width="match_parent"
-        android:layout_height="611dp"
+        android:layout_height="190dp"
         android:layout_below="@+id/os_texts"
         android:layout_marginTop="4dp"
-        android:numColumns="2" />
+        android:numColumns="3" />
 
 
     <TextView
@@ -23,6 +24,38 @@
         android:text="Tech Center"
         android:textAlignment="center"
         android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/texts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Game Category"
+        android:layout_below="@+id/customgrid2"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <GridView
+        android:id="@+id/customgrid3"
+        android:layout_width="match_parent"
+        android:layout_height="363dp"
+        android:layout_below="@+id/texts"
+        android:layout_marginTop="4dp"
+        android:numColumns="2"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customgrid3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="4dp"
+        android:text="Login" />
 
 
 </RelativeLayout>

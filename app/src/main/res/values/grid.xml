@@ -26,4 +26,17 @@
         <item>@drawable/strategi</item>
         <item>@drawable/novel</item>
     </integer-array>
+    <array name="guestA">
+        <item>SMARTPHONE</item>
+        <item>HEADPHONE</item>
+        <item>MEMORY CARD</item>
+    </array>
+    <array name="guestB">
+        <item>BATTLE ROYAL</item>
+        <item>Firts Person Shooter</item>
+        <item>Role Playing Game</item>
+        <item>SIMULATION</item>
+        <item>STRATEGY</item>
+        <item>VISUAL NOVEL</item>
+    </array>
 </resources>

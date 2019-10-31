@@ -1,5 +1,6 @@
 package com.example.mobiletaks;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
@@ -12,6 +13,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -62,7 +64,7 @@ public class CustomAdapter extends BaseAdapter {
         rowView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (result[position].equals("Handphone")) {
+                if (result[position].equals("Smartphone")) {
                     Intent i = new Intent(context.getApplicationContext(), FuuItem.class);
                     i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     holder.progressBar = (ProgressBar)rowView.findViewById(R.id.loading);
@@ -77,8 +79,31 @@ public class CustomAdapter extends BaseAdapter {
                     holder.progressBar.setVisibility(view.VISIBLE);
                     context.getApplicationContext().startActivity(i);
                 }
-                else{
+                else if (result[position].equals("Memory Card")){
                     Toast.makeText(context, "Kamu menekan "+result[position], Toast.LENGTH_SHORT).show();
+                }
+                else if (result[position].equals("Memory Card")){
+                    Toast.makeText(context, "Kamu menekan "+result[position], Toast.LENGTH_SHORT).show();
+                }
+                else if (result[position].equals("FPS")){
+                    Toast.makeText(context, "Kamu menekan "+result[position], Toast.LENGTH_SHORT).show();
+                }
+                else if (result[position].equals("MMORPG")){
+                    Toast.makeText(context, "Kamu menekan "+result[position], Toast.LENGTH_SHORT).show();
+                }
+                else if (result[position].equals("Simulation")){
+                    Toast.makeText(context, "Kamu menekan "+result[position], Toast.LENGTH_SHORT).show();
+                }
+                else if (result[position].equals("Strategy")){
+                    Toast.makeText(context, "Kamu menekan "+result[position], Toast.LENGTH_SHORT).show();
+                }
+                else if (result[position].equals("Visual Novel")){
+                    Toast.makeText(context, "Kamu menekan "+result[position], Toast.LENGTH_SHORT).show();
+                }
+                else{
+//                    Toast.makeText(context, "Kamu menekan "+result[position], Toast.LENGTH_SHORT).show();
+                    AlertDialog.Builder builder = new AlertDialog.Builder(view.getRootView().getContext());
+                    builder.setMessage("Anda Perlu Login untuj dapat membuka "+result[position]).setNegativeButton("Ok",null).create().show();
                 }
 
             }
