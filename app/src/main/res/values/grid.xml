@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="tesArray">
-        <item>Handphone</item>
-        <item>Document</item>
-        <item>Download</item>
-        <item>Game</item>
-        <item>Images</item>
-        <item>Music</item>
+        <item>Smartphone</item>
+        <item>Headphone</item>
+        <item>Memory Card</item>
     </array>
     <integer-array name="gambar">
-        <item>@mipmap/anime</item>
-        <item>@mipmap/document</item>
-        <item>@mipmap/download</item>
-        <item>@mipmap/game</item>
-        <item>@mipmap/images</item>
-        <item>@mipmap/music</item>
+        <item>@drawable/smartphone</item>
+        <item>@drawable/headphone</item>
+        <item>@drawable/memory</item>
+    </integer-array>
+    <array name="gamestore">
+        <item>Battle Royal</item>
+        <item>FPS</item>
+        <item>MMORPG</item>
+        <item>Simulation</item>
+        <item>Strategy</item>
+        <item>Visual Novel</item>
+    </array>
+    <integer-array name="gameimg">
+        <item>@drawable/battleroyal</item>
+        <item>@drawable/fps</item>
+        <item>@drawable/mmorpg</item>
+        <item>@drawable/simulation</item>
+        <item>@drawable/strategi</item>
+        <item>@drawable/novel</item>
     </integer-array>
 </resources>

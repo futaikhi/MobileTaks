@@ -68,7 +68,16 @@ public class CustomAdapter extends BaseAdapter {
                     holder.progressBar = (ProgressBar)rowView.findViewById(R.id.loading);
                     holder.progressBar.setVisibility(view.VISIBLE);
                     context.getApplicationContext().startActivity(i);
-                }else{
+                }
+                else if (result[position].equals("Battle Royal"))
+                {
+                    Intent i = new Intent(context.getApplicationContext(), DavidItem.class);
+                    i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    holder.progressBar = (ProgressBar)rowView.findViewById(R.id.loading);
+                    holder.progressBar.setVisibility(view.VISIBLE);
+                    context.getApplicationContext().startActivity(i);
+                }
+                else{
                     Toast.makeText(context, "Kamu menekan "+result[position], Toast.LENGTH_SHORT).show();
                 }
 

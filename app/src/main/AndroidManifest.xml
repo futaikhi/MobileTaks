@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".Guest">
         </activity>
+        <activity android:name=".DavidItem">
+        </activity>
     </application>
 
 </manifest>

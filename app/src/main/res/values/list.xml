@@ -79,4 +79,91 @@
 <!--        <item>1</item>-->
     </array>
 
+    <array name="judul">
+        <item>PUBG</item>
+        <item>ROS</item>
+        <item>Fortnite</item>
+        <item>Ark</item>
+        <item>Rust</item>
+    </array>
+
+    <array name="grafik">
+        <item>5</item>
+        <item>3</item>
+        <item>4</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+
+    <array name="optimasi">
+        <item>3</item>
+        <item>2</item>
+        <item>4</item>
+        <item>1</item>
+        <item>5</item>
+    </array>
+
+    <array name="event">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </array>
+
+    <array name="wgame">
+        <item>5</item>
+        <item>4</item>
+        <item>2</item>
+    </array>
+
+    <array name="imgroyal">
+        <item>https://img.icons8.com/carbon-copy/2x/pubg.png</item>
+        <item>https://img.utdstc.com/icons/rules-of-survival.png:l</item>
+        <item>https://icon-library.net/images/fortnite-icon/fortnite-icon-5.jpg</item>
+        <item>http://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/ark-game-icon.png</item>
+        <item>https://icon-library.net/images/rust-icon/rust-icon-23.jpg</item>
+    </array>
+
+    <array name="game">
+        <item>PUBG</item>
+        <item>ROS</item>
+        <item>Fortnite</item>
+        <item>Ark</item>
+        <item>Rust</item>
+    </array>
+    <array name="tampilan">
+        <item>5</item>
+        <item>3</item>
+        <item>4</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="minimum">
+        <item>3</item>
+        <item>2</item>
+        <item>4</item>
+        <item>1</item>
+        <item>5</item>
+    </array>
+    <array name="comunity">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </array>
+    <array name="wgam">
+        <item>5</item>
+        <item>4</item>
+        <item>2</item>
+    </array>
+    <array name="gambarGame">
+        <item>https://img.icons8.com/carbon-copy/2x/pubg.png</item>
+        <item>https://img.utdstc.com/icons/rules-of-survival.png:l</item>
+        <item>https://icon-library.net/images/fortnite-icon/fortnite-icon-5.jpg</item>
+        <item>http://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/ark-game-icon.png</item>
+        <item>https://icon-library.net/images/rust-icon/rust-icon-23.jpg</item>
+    </array>
+
 </resources>
