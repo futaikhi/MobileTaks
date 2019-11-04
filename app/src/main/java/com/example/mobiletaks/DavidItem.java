@@ -1,8 +1,11 @@
 package com.example.mobiletaks;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,12 +18,23 @@ public class DavidItem extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vii_list);
 
+        SharedPreferences mPrefanfences;
+        mPrefanfences = PreferenceManager.getDefaultSharedPreferences(this);
+
         String[] namagame;
         int[] agame;
         int[] bgame;
         int[] cgame;
         int[] wgame;
         String[] gambargame;
+
+        String npm = mPrefanfences.getString("com.example.mobiletaks.npm","");
+        String nana = mPrefanfences.getString("com.example.mobiletaks.nama","");
+
+        TextView tek = (TextView)findViewById(R.id.textView2);
+        tek.setText(npm);
+        TextView la = (TextView)findViewById(R.id.textView6);
+        la.setText(nana);
 
         ArrayList<SubjetData> data = new ArrayList<SubjetData>();
         namagame = getResources().getStringArray(R.array.game);

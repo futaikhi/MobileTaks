@@ -58,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
 //                        String passw = pass.getText().toString();
                         mEditor.putString(getString(R.string.passw), pas);
                         mEditor.commit();
+
+                        mEditor.putString("com.example.mobiletaks.npm","06.2016.1.06663");
+                        mEditor.commit();
                     }else {
                         mEditor.putString(getString(R.string.checkbox),"False");
                         mEditor.commit();
@@ -66,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
                         mEditor.commit();
 
                         mEditor.putString(getString(R.string.passw), "");
+                        mEditor.commit();
+
+                        mEditor.putString("com.example.mobiletaks.npm","");
                         mEditor.commit();
                     }
                     Toast.makeText(getApplicationContext(),"Login Berhasil",Toast.LENGTH_SHORT).show();
@@ -87,6 +93,9 @@ public class MainActivity extends AppCompatActivity {
 //                        String passw = pass.getText().toString();
                         mEditor.putString(getString(R.string.passw), pas);
                         mEditor.commit();
+
+                        mEditor.putString("com.example.mobiletaks.npm","06.2016.1.06670");
+                        mEditor.commit();
                     }else {
                         mEditor.putString(getString(R.string.checkbox),"False");
                         mEditor.commit();
@@ -95,6 +104,9 @@ public class MainActivity extends AppCompatActivity {
                         mEditor.commit();
 
                         mEditor.putString(getString(R.string.passw), "");
+                        mEditor.commit();
+
+                        mEditor.putString("com.example.mobiletaks.npm","");
                         mEditor.commit();
                     }
                     Toast.makeText(getApplicationContext(),"Login Succes",Toast.LENGTH_SHORT).show();
@@ -115,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
         String checkbox = mPrefanfences.getString(getString(R.string.checkbox), "false");
         String nama = mPrefanfences.getString(getString(R.string.nama),"");
         String passw = mPrefanfences.getString(getString(R.string.passw),"");
+        String npm = mPrefanfences.getString("com.example.mobiletaks.npm","");
 
         username.setText(nama);
         pass.setText(passw);

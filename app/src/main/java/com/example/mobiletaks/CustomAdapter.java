@@ -79,7 +79,7 @@ public class CustomAdapter extends BaseAdapter {
                     holder.progressBar.setVisibility(view.VISIBLE);
                     context.getApplicationContext().startActivity(i);
                 }
-                else if (result[position].equals("Memory Card")){
+                else if (result[position].equals("Headphone")){
                     Toast.makeText(context, "Kamu menekan "+result[position], Toast.LENGTH_SHORT).show();
                 }
                 else if (result[position].equals("Memory Card")){
@@ -103,7 +103,7 @@ public class CustomAdapter extends BaseAdapter {
                 else{
 //                    Toast.makeText(context, "Kamu menekan "+result[position], Toast.LENGTH_SHORT).show();
                     AlertDialog.Builder builder = new AlertDialog.Builder(view.getRootView().getContext());
-                    builder.setMessage("Anda Perlu Login untuj dapat membuka "+result[position]).setNegativeButton("Ok",null).create().show();
+                    builder.setMessage("Anda Perlu Login untuk dapat membuka "+result[position]).setNegativeButton("Ok",null).create().show();
                 }
 
             }

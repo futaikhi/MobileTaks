@@ -8,4 +8,5 @@
     <string name="checkbox">com.example.mobiletaks.checkbox</string>
     <string name="nama">com.example.mobiletaks.nama</string>
     <string name="passw">com.example.mobiletaks.passw</string>
+    <string name="npm">com.example.mobiletaks.npm</string>
 </resources>

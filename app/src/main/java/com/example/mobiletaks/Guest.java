@@ -3,6 +3,7 @@ package com.example.mobiletaks;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.GridView;
 
 public class Guest extends Fuu {
@@ -32,6 +33,12 @@ public class Guest extends Fuu {
     public void onBackPressed(){
         Intent intent = new Intent(Guest.this,MainActivity.class);
         Guest.this.startActivity(intent);
+        finish();
+    }
+
+    public void login(View view) {
+        Intent i = new Intent(Guest.this,MainActivity.class);
+        Guest.this.startActivity(i);
         finish();
     }
 }

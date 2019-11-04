@@ -1,8 +1,11 @@
 package com.example.mobiletaks;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,12 +18,20 @@ public class FuuItem extends AppCompatActivity {
     {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.list_item);
+        SharedPreferences mPrefanfences;
+        mPrefanfences = PreferenceManager.getDefaultSharedPreferences(this);
         String[] nama;
         int[] a;
         int[] b;
         int[] c;
         int[] w;
         String[] gambar;
+        String npm = mPrefanfences.getString("com.example.mobiletaks.npm","");
+        String nana = mPrefanfences.getString("com.example.mobiletaks.nama","");
+        TextView tek = (TextView)findViewById(R.id.textView3);
+        tek.setText(npm);
+        TextView la = (TextView)findViewById(R.id.textView4);
+        la.setText(nana);
         ArrayList<SubjetData> data = new ArrayList<SubjetData>();
         nama = getResources().getStringArray(R.array.hp);
         a = getResources().getIntArray(R.array.baterai);

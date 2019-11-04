@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hp">
+        <item>Samsung</item>
+        <item>Xiaomi</item>
+        <item>Iphone</item>
+        <item>Oppo</item>
+        <item>Vivo</item>
+        <!--        <item>Infinix</item>-->
+        <!--        <item>Huawei</item>-->
+        <!--        <item>Realme</item>-->
+        <!--        <item>Advan</item>-->
+        <!--        <item>Smartfren</item>-->
+    </array>
+    <array name="baterai">
+        <item>3</item>
+        <item>3</item>
+        <item>2</item>
+        <item>2</item>
+        <item>3</item>
+        <!--        <item>5</item>-->
+        <!--        <item>5</item>-->
+        <!--        <item>4</item>-->
+        <!--        <item>1</item>-->
+        <!--        <item>1</item>-->
+    </array>
+    <array name="panelLayar">
+        <item>5</item>
+        <item>2</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <!--        <item>2</item>-->
+        <!--        <item>4</item>-->
+        <!--        <item>1</item>-->
+        <!--        <item>1</item>-->
+        <!--        <item>1</item>-->
+    </array>
+    <array name="design">
+        <item>4</item>
+        <item>1</item>
+        <item>5</item>
+        <item>2</item>
+        <item>4</item>
+        <!--        <item>2</item>-->
+        <!--        <item>5</item>-->
+        <!--        <item>2</item>-->
+        <!--        <item>1</item>-->
+        <!--        <item>1</item>-->
+    </array>
+    <array name="w">
+        <item>5</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="gambarProduk">
+        <item>https://asset.kompas.com/crops/xd8_OkCtAQuojPCP1qhofJGDnaY=/0x0:0x0/780x390/data/photo/2015/02/23/1540277logo-samsung780x390.jpg</item>
+        <item>https://icons-for-free.com/iconfiles/png/512/company+mi+mobile+xiaomi+icon-1320168262452948540.png</item>
+        <item>https://image.flaticon.com/icons/png/512/23/23656.png</item>
+        <item>https://s3-ap-southeast-1.amazonaws.com/asset1.gotomalls.com/uploads/retailers/logo/KsQoiKLOVNtAlLsw-1761-oppo-1524124391_1.jpg</item>
+        <item>https://cdn.iconscout.com/icon/free/png-512/vivo-282151.png</item>
+        <!--        <item>@drawable/infinix</item>-->
+        <!--        <item>@drawable/huawei</item>-->
+        <!--        <item>@drawable/realme</item>-->
+        <!--        <item>@drawable/advan</item>-->
+        <!--        <item>@drawable/smarftren</item>-->
+    </array>
+
+    <array name="gambarLala">
+        <item>4</item>
+        <item>3</item>
+        <item>5</item>
+        <item>3</item>
+        <item>3</item>
+        <!--        <item>2</item>-->
+        <!--        <item>5</item>-->
+        <!--        <item>2</item>-->
+        <!--        <item>1</item>-->
+        <!--        <item>1</item>-->
+    </array>
+</resources>

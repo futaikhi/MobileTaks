@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="game">
+        <item>PUBG</item>
+        <item>ROS</item>
+        <item>Fortnite</item>
+        <item>Ark</item>
+        <item>Rust</item>
+    </array>
+    <array name="tampilan">
+        <item>5</item>
+        <item>3</item>
+        <item>4</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="minimum">
+        <item>3</item>
+        <item>2</item>
+        <item>4</item>
+        <item>1</item>
+        <item>5</item>
+    </array>
+    <array name="comunity">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </array>
+    <array name="wgame">
+        <item>5</item>
+        <item>4</item>
+        <item>2</item>
+    </array>
+    <array name="gambarGame">
+        <item>https://i.pinimg.com/originals/f0/62/a3/f062a3f214b208dd4eac506542f91422.png</item>
+        <item>https://img.utdstc.com/icons/rules-of-survival.png:l</item>
+        <item>https://icon-library.net/images/fortnite-icon/fortnite-icon-5.jpg</item>
+        <item>https://i.pinimg.com/originals/32/1f/37/321f377ca1e1d75581f2cf854ffa1092.png</item>
+        <item>https://pngimage.net/wp-content/uploads/2018/06/rust-png-logo-3.png</item>
+    </array>
+</resources>
